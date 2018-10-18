@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Maze</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class = "maze">
+  <h2> Welcome to the Backtracking Maze </h2>
+  <ion-grid class = "maze-grid">
+    <ion-row *ngFor = "let row of obsMatrix">
+        <div  class = "row" *ngFor = "let col of row" [ngSwitch] = "col">
+            <ion-col *ngSwitchCase = "'start'" style = "background:#000000"></ion-col>
+            <ion-col *ngSwitchCase = "'end'" style = "background:#000000"></ion-col>
+            <ion-col *ngSwitchCase = "'obs'" style = "background:#042f50"></ion-col>
+            <ion-col *ngSwitchCase = "'free'" style = "background:#39c9a2"></ion-col>
+        </div>
+    </ion-row>
+  </ion-grid>  
+  <button ion-button>Solve Maze</button>
+</ion-content>

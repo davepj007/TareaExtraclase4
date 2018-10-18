@@ -1,0 +1,18 @@
+page-maze {
+    text-align: center;
+}
+
+.maze ion-grid {
+    height: 80%;
+    width: 80%;
+    padding: 10px 10px;
+    border: black solid;
+}
+
+.maze-grid ion-row{
+    min-height: 44px;
+}
+
+.maze-grid ion-col{
+    padding-right: 55px;
+}
