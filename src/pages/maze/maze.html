@@ -13,8 +13,10 @@
             <ion-col *ngSwitchCase = "'end'" style = "background:#000000"></ion-col>
             <ion-col *ngSwitchCase = "'obs'" style = "background:#042f50"></ion-col>
             <ion-col *ngSwitchCase = "'free'" style = "background:#39c9a2"></ion-col>
+            <ion-col *ngSwitchCase = "'go'" style = "background:#00a600"></ion-col>
+            <ion-col *ngSwitchCase = "'fail'" style = "background:#a80202"></ion-col>
         </div>
     </ion-row>
   </ion-grid>  
-  <button ion-button>Solve Maze</button>
+  <button ion-button (tap)="solveMaze()">Solve Maze</button>
 </ion-content>
